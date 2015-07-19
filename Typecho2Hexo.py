@@ -60,7 +60,8 @@ def create_data(db):
 
 
 def main():
-    db = torndb.Connection(host="localhost", database="typecho_zblog", user="root", password="123")
+    # 把数据库相关信息改成自己的，默认localhost（和数据库同机的话不需要修改）
+    db = torndb.Connection(host="localhost", database="数据库名称", user="数据库用户", password="数据库密码")
     create_data(db)
 
 if __name__ == "__main__":
